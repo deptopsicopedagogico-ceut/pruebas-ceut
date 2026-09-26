@@ -149,8 +149,14 @@ try{
 <button onclick="generatePDF()" class="bg-blue-900 hover:bg-black text-white font-black px-6 py-3 rounded-xl text-sm flex items-center gap-2 shadow"><i class="fa-solid fa-file-pdf"></i> Descargar PDF Membretado con Firma</button>
 <button onclick="saveCurrentResultToHistory()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl text-sm flex items-center gap-2"><i class="fa-solid fa-cloud-arrow-up"></i> Guardar en Nube</button>
 </div>
-<div class="p-6 border-t flex justify-center gap-8 items-center">
-<div class="text-center"><div class="w-24 h-16 mx-auto"><img src="data:image/png;base64,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" class="w-full h-full object-contain"></div><div class="w-32 h-px bg-blue-900 mx-auto mt-2"></div><p class="text-[11px] font-bold text-blue-900 mt-1">Mtro. Carlos Aguilar Sánchez</p><p class="text-[9px] text-slate-500">Depto. Orientación Psicopedagógica - CEUT</p></div>
+<div class="p-6 border-t flex justify-center gap-8 items-center bg-slate-50">
+<div class="text-center">
+<div class="w-12 h-12 mx-auto bg-blue-900 rounded-full flex items-center justify-center text-white"><i class="fa-solid fa-building-columns text-xl"></i></div>
+<div class="w-32 h-px bg-blue-900 mx-auto mt-3"></div>
+<p class="text-[12px] font-black text-blue-900 mt-2 uppercase tracking-widest">Departamento Psicopedagógico</p>
+<p class="text-[10px] text-slate-500 mt-1">Centro de Estudios Universitarios y Tecnológicos - CEUT</p>
+<p class="text-[9px] text-slate-400 mt-1">Evaluación con fines psicopedagógicos - Resultados certeros con recomendaciones</p>
+</div>
 </div>
 </div>
 </section>
@@ -3358,32 +3364,248 @@ function calculateResults(){
     const score=state.answers[item.id]||0;
     const itemMax=Math.max(...item.options.map(o=>o.score));
     total+=score; max+=itemMax;
-    if(!subdomains[item.subdomain]) subdomains[item.subdomain]={score:0, max:0};
+    if(!subdomains[item.subdomain]) subdomains[item.subdomain]={score:0, max:0, items:[]};
     subdomains[item.subdomain].score+=score;
     subdomains[item.subdomain].max+=itemMax;
+    subdomains[item.subdomain].items.push({id:item.id, score, max:itemMax});
   });
   const pct=Math.round((total/max)*100)||0;
-  let level='', color='', text='';
+  let level='', color='', text='', recomendaciones='', seguimiento='';
+  
+  // Análisis detallado por subdominios para mayor certeza
+  const subAnalisis = Object.entries(subdomains).map(([k,v])=>{
+    const p = Math.round((v.score/v.max)*100);
+    let nivel = p>=70?'ALTO':p>=50?'MEDIO':p>=30?'BAJO':'MUY BAJO';
+    return {nombre:k, pct:p, nivel, score:v.score, max:v.max};
+  }).sort((a,b)=>a.pct-b.pct);
+  
+  const debiles = subAnalisis.filter(s=>s.pct<50);
+  const fuertes = subAnalisis.filter(s=>s.pct>=70);
+
   if(inst.id==='raven_matrices'){
-    if(pct>=95){level='Superior (P95+)'; color='bg-purple-100 text-purple-800 border-purple-200'; text='Capacidad intelectual superior - Percentil 95+. Razonamiento analógico muy alto.';}
-    else if(pct>=75){level='Superior al Término Medio (P75)'; color='bg-blue-100 text-blue-800 border-blue-200'; text='Por encima del promedio - Buen razonamiento abstracto.';}
-    else if(pct>=50){level='Término Medio (P50)'; color='bg-emerald-100 text-emerald-800 border-emerald-200'; text='Dentro del promedio esperado.';}
-    else if(pct>=25){level='Inferior al Término Medio (P25)'; color='bg-yellow-100 text-yellow-800 border-yellow-200'; text='Por debajo del promedio - Requiere apoyo.';}
-    else {level='Deficiente (P5)'; color='bg-red-100 text-red-800 border-red-200'; text='Puntaje bajo - Evaluación complementaria.';}
+    let ciAprox = 0;
+    if(pct>=95) ciAprox = 130;
+    else if(pct>=90) ciAprox = 120;
+    else if(pct>=75) ciAprox = 110;
+    else if(pct>=50) ciAprox = 100;
+    else if(pct>=25) ciAprox = 85;
+    else ciAprox = 70;
+    
+    if(pct>=95){
+      level=`Superior (P95+) - CI Aproximado ${ciAprox}`;
+      color='bg-purple-100 text-purple-800 border-purple-200';
+      text=`Capacidad intelectual muy superior. Percentil 95 o superior. Razonamiento eductivo y analógico excepcional. Capacidad para resolver problemas nuevos no verbales de alta complejidad sin conocimiento previo.`;
+      recomendaciones=`RECOMENDACIONES CERTERAS:
+• Ubicar en programas de enriquecimiento y alta exigencia cognitiva
+• Retos de razonamiento abstracto avanzado (Series A-E completadas con alta precisión)
+• Potenciar con problemas de lógica, ajedrez, programación
+• Seguimiento: Reevaluar en 12 meses para verificar estabilidad del percentil
+• Fortalezas detectadas: ${fuertes.map(f=>f.nombre).join(', ')||'Todas las series'}`;
+      seguimiento=`Seguimiento semestral con tareas de alta complejidad. No requiere intervención.`;
+    }
+    else if(pct>=75){
+      level=`Superior al Término Medio (P75) - CI Aprox ${ciAprox}`;
+      color='bg-blue-100 text-blue-800 border-blue-200';
+      text=`Capacidad intelectual por encima del promedio. Percentil 75. Buen razonamiento abstracto, buena capacidad para inferir relaciones entre figuras y completar patrones. Adecuado para Bachillerato y Universidad con buen desempeño en áreas lógico-matemáticas.`;
+      recomendaciones=`RECOMENDACIONES:
+• Potenciar razonamiento con ejercicios de Series D y E (las más complejas)
+• Si hay series débiles: ${debiles.map(d=>d.nombre+' ('+d.pct+'%)').join(', ')||'Ninguna relevante'}
+• Estrategias: entrenamiento en analogías visuales, rotación mental
+• Fortalezas: ${fuertes.map(f=>f.nombre).join(', ')}`;
+      seguimiento=`Reevaluación en 1 año si hay bajo rendimiento académico pese a buen Raven.`;
+    }
+    else if(pct>=50){
+      level=`Término Medio (P50) - CI Aprox ${ciAprox}`;
+      color='bg-emerald-100 text-emerald-800 border-emerald-200';
+      text=`Capacidad intelectual dentro del promedio esperado para edad y escolaridad (P50). Razonamiento eductivo adecuado para resolver problemas cotidianos y académicos. Desempeño funcional en Bachillerato/Universidad.`;
+      recomendaciones=`RECOMENDACIONES:
+• Mantener estimulación cognitiva regular
+• Si hay series con bajo desempeño: ${debiles.map(d=>d.nombre).join(', ')||'Ninguna significativa'} - trabajar con ejercicios específicos de esa serie
+• Fortalezas a potenciar: ${fuertes.map(f=>f.nombre).join(', ')||'Equilibrio general'}
+• Técnicas: mapas mentales, resolución de problemas paso a paso`;
+      seguimiento=`Monitoreo académico. Si hay reprobación, evaluar factores emocionales/motivacionales, no solo cognitivos.`;
+    }
+    else if(pct>=25){
+      level=`Inferior al Término Medio (P25) - CI Aprox ${ciAprox} - Requiere apoyo`;
+      color='bg-yellow-100 text-yellow-800 border-yellow-200';
+      text=`Capacidad intelectual por debajo del promedio (P25). Dificultad moderada para razonamiento abstracto no verbal. Puede presentar lentitud para captar relaciones complejas entre patrones visuales. No indica discapacidad intelectual, pero sugiere necesidad de apoyos.`;
+      recomendaciones=`RECOMENDACIONES CERTERAS:
+• Evaluación complementaria: descartar factores atencionales, ansiedad, falta de sueño, problemas visuales
+• Entrenamiento cognitivo específico: Series A y B con apoyo guiado, aumentar gradualmente complejidad
+• Dimensiones débiles detectadas: ${debiles.map(d=>d.nombre+' '+d.pct+'%').join(', ')}
+• Estrategias psicopedagógicas: instrucción explícita, dividir matriz en partes, verbalizar relación
+• Adaptaciones: tiempo extra en exámenes de razonamiento, apoyos visuales`;
+      seguimiento=`Reevaluar en 6 meses tras intervención. Derivar a psicopedagogía si persiste.`;
+    }
+    else {
+      level=`Deficiente (P5) - CI Aprox ${ciAprox} - Evaluación profunda urgente`;
+      color='bg-red-100 text-red-800 border-red-200';
+      text=`Puntaje significativamente bajo (P5 o menor). Dificultad importante para razonamiento eductivo no verbal. Requiere descartar factores como falta de comprensión de instrucciones, fatiga, ansiedad elevada, déficit visual o necesidad de evaluación de capacidad intelectual completa (WISC/WAIS).`;
+      recomendaciones=`RECOMENDACIONES URGENTES:
+• Evaluación multidisciplinaria completa: WISC-V o WAIS-IV, valoración visual, auditiva
+• Revisar condiciones de aplicación: ¿Entendió instrucciones? ¿Había ansiedad?
+• Series con mayor dificultad: ${debiles.slice(0,3).map(d=>d.nombre).join(', ')}
+• Intervención: programa de estimulación cognitiva 3 veces por semana, 30 min
+• No etiquetar como baja capacidad sin evaluación completa`;
+      seguimiento=`Reevaluación en 3-6 meses con profesional. Canalizar a Departamento Psicopedagógico.`;
+    }
   } else if(inst.id==='dislexia_pro'){
-    if(pct<25){level='Sin indicadores significativos'; color='bg-emerald-100 text-emerald-800'; text='No hay indicadores significativos de dislexia.';}
-    else if(pct<45){level='Indicadores leves'; color='bg-yellow-100 text-yellow-800'; text='Indicadores leves - Seguimiento recomendado.';}
-    else if(pct<70){level='Riesgo moderado'; color='bg-orange-100 text-orange-800'; text='Riesgo moderado - Evaluación profunda recomendada.';}
-    else {level='Alto riesgo - Intervención'; color='bg-red-100 text-red-800'; text='Alto riesgo de dislexia - Intervención inmediata.';}
+    if(pct<25){
+      level='Sin indicadores significativos de dislexia (0-24%)';
+      color='bg-emerald-100 text-emerald-800 border-emerald-200';
+      text=`No se observan indicadores significativos de dislexia o trastorno del aprendizaje. Conciencia fonológica, decodificación y escritura dentro de lo esperado. Percentil de riesgo bajo.`;
+      recomendaciones=`RECOMENDACIONES:
+• Continuar con programa lector regular
+• Fortalecer velocidad lectora con lectura diaria 15 min
+• Fortalezas: ${fuertes.map(f=>f.nombre).join(', ')}`;
+      seguimiento=`Monitoreo anual. Si aparece bajo rendimiento, reevaluar.`;
+    }
+    else if(pct<45){
+      level='Indicadores leves de dificultades lectoras (25-44%)';
+      color='bg-yellow-100 text-yellow-800 border-yellow-200';
+      text=`Se detectan algunos indicadores leves de dificultades de aprendizaje. Puede haber lentitud ocasional, confusiones esporádicas b-d/p-q o errores ortográficos frecuentes. No cumple criterios completos de dislexia, pero hay señales de alerta.`;
+      recomendaciones=`RECOMENDACIONES CERTERAS:
+• Dimensiones con alerta: ${debiles.map(d=>d.nombre+' ('+d.pct+'%)').join(', ')}
+• Intervención preventiva: 20 min diarios conciencia fonológica (rimas, segmentación silábica, sonidos iniciales)
+• Estrategias: uso de tarjetas multisensoriales (ver letra, trazar en arena, decir sonido)
+• Adaptaciones ligeras: tiempo extra 25% en lectura, permitir audiolibros como apoyo
+• Fortalezas a usar como apoyo: ${fuertes.map(f=>f.nombre).join(', ')}`;
+      seguimiento=`Reevaluar en 6 meses. Si aumenta puntaje, pasar a riesgo moderado.`;
+    }
+    else if(pct<70){
+      level='Riesgo MODERADO de dislexia/trastorno aprendizaje (45-69%)';
+      color='bg-orange-100 text-orange-800 border-orange-200';
+      text=`Indicadores moderados compatibles con posible dislexia fonológica o trastorno específico del aprendizaje con dificultad en lectura/escritura. Patrón: conciencia fonológica débil, decodificación lenta, errores ortográficos persistentes. Afecta velocidad y fluidez, pero comprensión puede estar preservada si le leen.`;
+      recomendaciones=`RECOMENDACIONES CERTERAS Y DETALLADAS:
+• URGENTE: Evaluación psicopedagógica profunda con pruebas de lectura de palabras/pseudopalabras (PROLEC), dictado, velocidad lectora
+• Dimensiones críticas detectadas: ${debiles.map(d=>d.nombre+' - '+d.pct+'%').join(', ')}
+• Intervención estructurada 3x/semana:
+  - Conciencia fonológica: segmentación, omisión, sustitución de fonemas
+  - Ruta fonológica: correspondencia letra-sonido explícita, método multisensorial Orton-Gillingham
+  - Escritura: dictado con autocorrección, lista de palabras con b-v, g-j, ll-y
+  - Velocidad: lecturas repetidas, cronometrar fluidez
+• Adaptaciones curriculares formales:
+  - Tiempo extra 50% en exámenes
+  - Evaluar contenido, no ortografía en materias no lingüísticas
+  - Permitir uso de computadora, audiolibros, lector de texto
+  - Ubicar al frente cerca del profesor
+• Fortalezas para compensar: ${fuertes.map(f=>f.nombre).join(', ')} - usar aprendizaje visual y auditivo`;
+      seguimiento=`Seguimiento mensual por Departamento Psicopedagógico. Reevaluar en 3-6 meses. Valorar derivación a terapia de lenguaje.`;
+    }
+    else {
+      level='ALTO RIESGO de dislexia - Intervención inmediata (70-100%)';
+      color='bg-red-100 text-red-800 border-red-200';
+      text=`Alto riesgo de dislexia y trastorno del lenguaje. Múltiples indicadores en todas las dimensiones: historia familiar, retraso lenguaje oral, confusiones b-d/p-q persistentes, lectura muy lenta y silabeada, omisiones/sustituciones, ortografía muy afectada, memoria de trabajo verbal débil. Compatible con Trastorno Específico del Aprendizaje según DSM-5.`;
+      recomendaciones=`RECOMENDACIONES URGENTES Y CERTERAS:
+• EVALUACIÓN MULTIDISCIPLINARIA INMEDIATA: Psicopedagogía + Lenguaje + Neuropsicología + Valoración visual/auditiva
+• Dimensiones con afectación severa: ${subAnalisis.filter(s=>s.pct>=60).map(s=>s.nombre+' '+s.pct+'%').join(', ')}
+• PLAN DE INTERVENCIÓN INDIVIDUALIZADO:
+  - Frecuencia: 4-5 sesiones semanales 45 min
+  - Método: Orton-Gillingham estructurado, secuencial, multisensorial
+  - Objetivos: automatizar correspondencia grafema-fonema, mejorar velocidad a 60 palabras/min, reducir errores ortográficos 50%
+  - Material: listas de palabras por familia fonética, lectura de pseudopalabras, dictados controlados
+• ADAPTACIONES CURRICULARES OFICIALES:
+  - Dictamen para SEP/Universidad: tiempo extra 100%, evaluación diferenciada, uso de tecnología de apoyo
+  - No penalizar ortografía, permitir exámenes orales
+  - Tutorías individuales
+  - Apoyo emocional: autoestima afectada por comparaciones
+• Familia: psicoeducación sobre dislexia (no es flojera, es neurobiológico), lectura diaria sin presión, reforzar avances
+• Fortalezas mínimas a potenciar: ${fuertes.length>0?fuertes.map(f=>f.nombre).join(', '):'Requiere evaluación de inteligencias múltiples para encontrar áreas fuertes'}`;
+      seguimiento=`Seguimiento semanal por Departamento Psicopedagógico. Reevaluación completa en 3 meses. Coordinación con docentes de todas las materias.`;
+    }
+  } else if(inst.id==='comprension_lectora'){
+    if(pct>=80){
+      level='Comprensión Lectora Superior (80-100%)';
+      color='bg-purple-100 text-purple-800 border-purple-200';
+      text=`Comprensión lectora muy buena en los tres niveles: literal (recupera datos explícitos), inferencial (deduce lo no dicho) y crítico (evalúa y aplica). Vocabulario en contexto adecuado.`;
+      recomendaciones=`RECOMENDACIONES:
+• Mantener lectura de textos científicos y argumentativos complejos
+• Potenciar nivel crítico con debates
+• Dimensiones fuertes: ${fuertes.map(f=>f.nombre).join(', ')}
+• Si hay dimensión baja: ${debiles.map(d=>d.nombre).join(', ')||'Ninguna'}`;
+      seguimiento=`Continuar plan lector.`;
+    }
+    else if(pct>=60){
+      level='Comprensión Buena (60-79%)';
+      color='bg-emerald-100 text-emerald-800 border-emerald-200';
+      text=`Buena comprensión literal e inferencial, con algunas dificultades en nivel crítico. Puede recuperar información explícita y hacer inferencias básicas, pero necesita apoyo para análisis crítico y aplicación.`;
+      recomendaciones=`RECOMENDACIONES:
+• Trabajar nivel crítico: preguntas ¿Qué opinas? ¿Estás de acuerdo? ¿Cómo aplicarías?
+• Dimensiones débiles: ${debiles.map(d=>d.nombre+' '+d.pct+'%').join(', ')}
+• Estrategias: subrayado, resumen con propias palabras, mapas mentales
+• Lectura diaria 20 min con preguntas posteriores`;
+      seguimiento=`Reevaluar en 6 meses.`;
+    }
+    else if(pct>=40){
+      level='Comprensión Básica - Requiere apoyo (40-59%)';
+      color='bg-yellow-100 text-yellow-800 border-yellow-200';
+      text=`Comprensión literal aceptable, pero fallas en inferencial y crítico. Necesita releer para entender, le cuesta identificar idea principal y vocabulario en contexto. Compatible con dificultades de aprendizaje si además hay dislexia.`;
+      recomendaciones=`RECOMENDACIONES CERTERAS:
+• Dimensiones críticas: ${debiles.map(d=>d.nombre+' '+d.pct+'%').join(', ')}
+• Intervención: enseñar estrategias explícitas:
+  - Literal: buscar palabras clave, quién/qué/cuándo/dónde
+  - Inferencial: ¿Qué quiso decir el autor? ¿Por qué?
+  - Crítico: ¿Estás de acuerdo? ¿Qué harías tú?
+• Vocabulario: enseñar prefijos, sufijos, contexto
+• Adaptaciones: textos más cortos, lectura guiada, preguntas previas a la lectura`;
+      seguimiento=`Intervención 2x/semana. Reevaluar en 3 meses.`;
+    }
+    else {
+      level='Comprensión Deficiente (<40%) - Intervención urgente';
+      color='bg-red-100 text-red-800 border-red-200';
+      text=`Dificultad significativa en comprensión lectora en todos los niveles. No recupera datos literales con precisión, no infiere, no evalúa críticamente. Puede deberse a decodificación lenta (si tiene dislexia) o a falta de estrategias.`;
+      recomendaciones=`RECOMENDACIONES URGENTES:
+• Descartar dislexia: si decodifica lento, primero intervenir decodificación
+• Si decodifica bien pero no comprende: entrenar estrategias de comprensión desde cero
+• Dimensiones afectadas: ${subAnalisis.map(s=>s.nombre+' '+s.pct+'%').join(', ')}
+• Plan: lectura en voz alta por docente + preguntas inmediatas, modelado de pensamiento
+• Textos muy cortos al inicio (100 palabras), aumentar gradualmente`;
+      seguimiento=`Seguimiento semanal por Departamento Psicopedagógico.`;
+    }
   } else {
-    if(pct>=70){level='Alto'; color='bg-emerald-100 text-emerald-800'; text='Puntaje alto en '+inst.categoryLabel;}
-    else if(pct>=50){level='Medio'; color='bg-blue-100 text-blue-800'; text='Nivel medio - Dentro de lo esperado.';}
-    else if(pct>=30){level='Bajo'; color='bg-yellow-100 text-yellow-800'; text='Nivel bajo - Requiere atención.';}
-    else {level='Muy Bajo'; color='bg-red-100 text-red-800'; text='Nivel muy bajo - Intervención prioritaria.';}
+    // Para otras pruebas
+    if(pct>=70){
+      level='ALTO - Fortaleza clara';
+      color='bg-emerald-100 text-emerald-800 border-emerald-200';
+      text=`Puntaje alto en ${inst.categoryLabel}. Fortaleza clara en esta dimensión.`;
+      recomendaciones=`RECOMENDACIONES: Potenciar esta fortaleza como apoyo para áreas débiles. Dimensiones fuertes: ${fuertes.map(f=>f.nombre).join(', ')}. Dimensiones a mejorar: ${debiles.map(d=>d.nombre).join(', ')||'Ninguna significativa'}.`;
+    }
+    else if(pct>=50){
+      level='MEDIO - Dentro de lo esperado';
+      color='bg-blue-100 text-blue-800 border-blue-200';
+      text=`Nivel medio dentro de lo esperado para ${inst.categoryLabel}. Desempeño funcional.`;
+      recomendaciones=`RECOMENDACIONES: Mantener y potenciar. Áreas fuertes: ${fuertes.map(f=>f.nombre).join(', ')||'Equilibrio'}. Áreas a reforzar: ${debiles.map(d=>d.nombre).join(', ')||'Ninguna'}.`;
+    }
+    else if(pct>=30){
+      level='BAJO - Requiere apoyo';
+      color='bg-yellow-100 text-yellow-800 border-yellow-200';
+      text=`Nivel bajo en ${inst.categoryLabel}. Dificultades que requieren atención psicopedagógica.`;
+      recomendaciones=`RECOMENDACIONES CERTERAS: Dimensiones críticas: ${debiles.map(d=>d.nombre+' '+d.pct+'%').join(', ')}. Intervención 2x/semana en estas áreas. Usar fortalezas ${fuertes.map(f=>f.nombre).join(', ')} como apoyo.`;
+    }
+    else {
+      level='MUY BAJO - Intervención prioritaria';
+      color='bg-red-100 text-red-800 border-red-200';
+      text=`Nivel muy bajo en ${inst.categoryLabel}. Intervención prioritaria y evaluación complementaria recomendada.`;
+      recomendaciones=`RECOMENDACIONES URGENTES: Evaluación profunda de ${inst.categoryLabel}. Dimensiones afectadas: ${subAnalisis.map(s=>s.nombre+' '+s.pct+'%').join(', ')}. Plan individualizado por Departamento Psicopedagógico.`;
+    }
+    seguimiento=`Seguimiento por Departamento Psicopedagógico según nivel de riesgo.`;
   }
+
   const folio='CEUT-'+Date.now().toString().slice(-6)+'-'+Math.floor(100+Math.random()*900);
   const date=new Date().toLocaleDateString('es-MX',{year:'numeric',month:'long',day:'numeric'});
-  const result={folio, date, patient: state.currentPatient, testId: inst.id, testTitle: inst.title, testDomain: inst.categoryLabel, totalScore: total, maxScore: max, pct, interpretation: {level, color, text}, subdomains};
+  const result={
+    folio, date, 
+    patient: state.currentPatient, 
+    testId: inst.id, 
+    testTitle: inst.title, 
+    testDomain: inst.categoryLabel, 
+    totalScore: total, 
+    maxScore: max, 
+    pct, 
+    interpretation: {level, color, text, recomendaciones, seguimiento, subAnalisis, debiles, fuertes}, 
+    subdomains,
+    fechaISO: new Date().toISOString()
+  };
   state.lastEvaluationResult=result;
   renderReportView();
   switchTab('results');
@@ -3407,6 +3629,30 @@ function renderReportView(){
   pill.textContent=res.interpretation.level;
   pill.className='mt-3 inline-block px-3 py-1 rounded-full text-xs font-bold border '+res.interpretation.color;
   document.getElementById('rep-interpretation-text').textContent=res.interpretation.text;
+  
+  // Mostrar recomendaciones certeras
+  let recContainer = document.getElementById('rep-recomendaciones');
+  if(!recContainer){
+    const interpDiv = document.getElementById('rep-interpretation-text').parentElement;
+    const newDiv = document.createElement('div');
+    newDiv.innerHTML = `
+      <div class="mt-6 p-4 bg-blue-50 border-2 border-blue-200 rounded-xl">
+        <h4 class="font-black text-blue-900 text-sm mb-2"><i class="fa-solid fa-lightbulb mr-2"></i>RECOMENDACIONES CERTERAS - Departamento Psicopedagógico</h4>
+        <p id="rep-recomendaciones" class="text-xs text-slate-800 leading-relaxed whitespace-pre-line"></p>
+      </div>
+      <div class="mt-4 p-4 bg-amber-50 border border-amber-200 rounded-xl">
+        <h4 class="font-bold text-amber-800 text-xs mb-1"><i class="fa-solid fa-clock mr-1"></i>SEGUIMIENTO</h4>
+        <p id="rep-seguimiento" class="text-xs text-slate-700"></p>
+      </div>
+    `;
+    interpDiv.appendChild(newDiv);
+    recContainer = document.getElementById('rep-recomendaciones');
+  }
+  const recEl = document.getElementById('rep-recomendaciones');
+  const segEl = document.getElementById('rep-seguimiento');
+  if(recEl) recEl.textContent = res.interpretation.recomendaciones||'Sin recomendaciones adicionales';
+  if(segEl) segEl.textContent = res.interpretation.seguimiento||'Seguimiento por Departamento Psicopedagógico';
+  
   const tbody=document.getElementById('rep-breakdown-table');
   tbody.innerHTML='';
   const labels=[]; const data=[];
@@ -3431,7 +3677,7 @@ async function saveCurrentResultToHistory(){
   renderHistoryTable();
   showToast('✅ Guardado - Informe automático');
   if(window.ceutDB && window.ceutFS){
-    try{await window.ceutFS.addDoc(window.ceutFS.collection(window.ceutDB, "evaluaciones"), {...state.lastEvaluationResult, createdAt: window.ceutFS.serverTimestamp(), plantel:"CEUT", firma:"Mtro. Carlos Aguilar Sánchez"}); showToast('☁️ Guardado en nube');}catch(e){console.error(e);}
+    try{await window.ceutFS.addDoc(window.ceutFS.collection(window.ceutDB, "evaluaciones"), {...state.lastEvaluationResult, createdAt: window.ceutFS.serverTimestamp(), plantel:"CEUT", firma:"Departamento Psicopedagógico"}); showToast('☁️ Guardado en nube');}catch(e){console.error(e);}
   }
 }
 
@@ -3488,16 +3734,29 @@ async function generatePDF(){
   doc.setFont('helvetica','normal'); doc.setFontSize(9);
   Object.entries(res.subdomains).forEach(([k,v])=>{const pct=Math.round((v.score/v.max)*100); doc.text('• '+k+': '+v.score+'/'+v.max+' ('+pct+'%)',18,y); y+=5; if(y>250){doc.addPage(); y=20;}});
   y+=3;
-  doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.text('Interpretación Automática:',15,y); y+=6;
+  doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.text('Interpretación Automática Certera:',15,y); y+=6;
   doc.setFont('helvetica','normal'); doc.setFontSize(9);
   const lines=doc.splitTextToSize(res.interpretation.text,180); doc.text(lines,15,y); y+=lines.length*5+6;
+  
+  if(y>200){doc.addPage(); y=20;}
+  doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.setTextColor(10,31,92); doc.text('RECOMENDACIONES CERTERAS - Departamento Psicopedagógico:',15,y); y+=6;
+  doc.setFont('helvetica','normal'); doc.setFontSize(8); doc.setTextColor(0,0,0);
+  const recLines=doc.splitTextToSize(res.interpretation.recomendaciones||'Sin recomendaciones',180);
+  doc.text(recLines,15,y); y+=recLines.length*4+6;
+  
+  if(y>200){doc.addPage(); y=20;}
+  doc.setFont('helvetica','bold'); doc.setFontSize(9); doc.text('Seguimiento:',15,y); y+=5;
+  doc.setFont('helvetica','normal'); doc.setFontSize(8);
+  const segLines=doc.splitTextToSize(res.interpretation.seguimiento||'',180);
+  doc.text(segLines,15,y); y+=segLines.length*4+8;
+
   if(y>220){doc.addPage(); y=20;}
   doc.setDrawColor(10,31,92); doc.setLineWidth(0.5); doc.line(15,y+25,95,y+25);
-  try{doc.addImage(FIRMA_BASE64,'PNG',20,y+2,60,20);}catch(e){}
-  doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.text('Mtro. Carlos Aguilar Sánchez',15,y+30);
+  /* Firma eliminada - solo Departamento Psicopedagógico */
+  doc.setFont('helvetica','bold'); doc.setFontSize(10); doc.text('Departamento Psicopedagógico',15,y+30);
   doc.setFont('helvetica','normal'); doc.setFontSize(8);
-  doc.text('Responsable del Depto. de Orientación Psicopedagógica',15,y+34);
-  doc.text('CEUT - Centro de Estudios Universitarios y Tecnológicos',15,y+38);
+  doc.text('Centro de Estudios Universitarios y Tecnológicos - CEUT',15,y+34);
+  doc.text('Evaluación con fines psicopedagógicos - Resultados certeros con recomendaciones',15,y+38);
   doc.setFillColor(10,31,92); doc.rect(0,287,210,10,'F');
   doc.setTextColor(255,255,255); doc.setFontSize(7);
   doc.text('CEUT Tigres • 13 Pruebas Completas • Raven 60 Real Visible • Dislexia • Comprensión • Admin Control Total • '+new Date().getFullYear(),105,293,{align:'center'});
